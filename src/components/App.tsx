@@ -4,7 +4,7 @@ import { Toolbox } from './organisms/Toolbox';
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.app}>
       <h1 className={classes.title}>Tool Box</h1>
       <Toolbox />
     </div>

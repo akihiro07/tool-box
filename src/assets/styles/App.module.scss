@@ -1,5 +1,11 @@
 @import './colors';
 
+.app {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
 .title {
   color: $main;
+  text-align: center;
 }
