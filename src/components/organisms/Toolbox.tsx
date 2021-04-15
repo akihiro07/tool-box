@@ -1,16 +1,24 @@
 import React from 'react';
 import classes from '../../assets/styles/Toolbox.module.scss';
+import { Link } from 'react-router-dom';
 
-export const Toolbox = () => {
+export const OToolbox = () => {
   return (
     <div className={classes.toolbox}>
-      {/* molecules:アイテム */}
-      <div className={classes.contentWrapper}>
+      {/* molecules:アイテムへ */}
+      <Link className={classes.contentWrapper} to="/counter">
         <div>
-          <h2>文字数カウント</h2>
-          <p>これは文字数カウント</p>
+          <h2>文字数カウンター</h2>
+          <p>文字数をカウントしてくれるよ！</p>
         </div>
-      </div>
+      </Link>
+
+      <Link className={classes.contentWrapper} to="/">
+        <div>
+          <h2>DEMO</h2>
+          <p>現在何もないよ</p>
+        </div>
+      </Link>
     </div>
   );
 };
