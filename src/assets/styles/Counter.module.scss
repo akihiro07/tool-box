@@ -33,3 +33,28 @@
   border-radius: 0 0 5px 5px;
   border-color: $main;
 }
+
+.countList {
+  color: $sub2;
+  margin-top: 40px;
+}
+
+.listTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+
+  li {
+    &:not(:first-child) {
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.item {
+  color: $main;
+  font-weight: 700;
+}

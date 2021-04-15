@@ -38,13 +38,21 @@ export const OCounter = () => {
         <textarea className={classes.textarea} onInput={counter}></textarea>
       </div>
 
-      <div>
-        <div>現在の文字数</div>
-        <ul>
-          <li>改行・空白を含める文字数・・・{countAll}</li>
-          <li>改行・空白を含めない文字数・・・{countTextOnly}</li>
-          <li>改行を含めない・空白を含める文字数・・・{countBlank}</li>
-          <li>改行を含める・空白を含めない文字数・・・{countLine}</li>
+      <div className={classes.countList}>
+        <div className={classes.listTitle}>現在の文字数</div>
+        <ul className={classes.list}>
+          <li>
+            改行・空白を含める文字数...<span className={classes.item}>{countAll}</span>
+          </li>
+          <li>
+            改行・空白を含めない文字数...<span className={classes.item}>{countTextOnly}</span>
+          </li>
+          <li>
+            改行を含めない・空白を含める文字数...<span className={classes.item}>{countBlank}</span>
+          </li>
+          <li>
+            改行を含める・空白を含めない文字数...<span className={classes.item}>{countLine}</span>
+          </li>
         </ul>
       </div>
     </div>
