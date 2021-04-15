@@ -1,10 +1,13 @@
+import reportWebVitals from './reportWebVitals';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './assets/styles/index.scss';
 import classes from './assets/styles/Main.module.scss';
-import reportWebVitals from './reportWebVitals';
+
 import { OToolbox } from './components/organisms/Toolbox';
+import { OCounter } from './components/organisms/Counter';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,8 +18,7 @@ ReactDOM.render(
         <Switch>
           {/* `/counter`の時、トップへ遷移できるルーティング */}
           <Route path="/counter">
-            <Link to="/">トップページへ戻る</Link>
-            <h2>文字数カウンター</h2>
+            <OCounter />
           </Route>
 
           {/* `/`の時、各画面へ遷移できるルーティング(Link自体はコンポーネント) */}
