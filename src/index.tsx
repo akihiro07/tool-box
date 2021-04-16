@@ -15,16 +15,19 @@ ReactDOM.render(
       <h1 className={classes.title}>Tool Box</h1>
 
       <Router>
+        {/* URLに最初のマッチした<Route>のpath属性部分を描画 */}
         <Switch>
-          {/* `/counter`の時、トップへ遷移できるルーティング */}
+          {/* `/`の時、各画面へ遷移できるルーティング(Link自体はコンポーネント) */}
+          <Route path="/" exact>
+            <OToolbox />
+          </Route>
+
+          {/* `/counter`の時、トップへ遷移できるルーティング(Link自体はコンポーネント) */}
           <Route path="/counter">
             <OCounter />
           </Route>
-
-          {/* `/`の時、各画面へ遷移できるルーティング(Link自体はコンポーネント) */}
-          <Route path="/">
-            <OToolbox />
-          </Route>
+          {/* TODO:どこにもマッチしなかった場合、404ページへ */}
+          <Route path="*" children={<div>Not Found</div>} />
         </Switch>
       </Router>
     </div>
