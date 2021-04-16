@@ -5,38 +5,38 @@
   color: $sub2;
 }
 .textareaBox {
-  width: 75%;
   margin: 1.5rem auto 0;
   text-align: center;
+  width: 75%;
 }
 
 .count {
-  font-size: 1.15rem;
-  font-weight: 700;
   background-color: $main;
-  color: $sub3;
   border-radius: 5px 5px 0 0;
+  color: $sub3;
+  font-weight: 700;
+  font-size: 1.15rem;
 
   .number {
-    margin: 0 0.1875rem;
-    font-size: 1.4rem;
     color: #ffd100;
+    font-size: 1.4rem;
+    margin: 0 0.1875rem;
   }
 }
 
 .textarea {
-  width: 100%;
-  min-height: 300px;
+  resize: vertical;
   padding: 0.625rem 0.9375rem;
   outline: none;
-  resize: vertical;
-  border-radius: 0 0 5px 5px;
   border-color: $main;
+  border-radius: 0 0 5px 5px;
+  min-height: 300px;
+  width: 100%;
 }
 
 .countList {
-  color: $sub2;
   margin-top: 40px;
+  color: $sub2;
 }
 
 .listTitle {

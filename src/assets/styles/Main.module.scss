@@ -1,14 +1,14 @@
 @import './colors';
 
 .app {
-  max-width: 940px;
   margin: 0 auto;
+  max-width: 940px;
 }
 
 .title {
   color: $main;
-  text-align: center;
   font-size: 2.25rem;
+  text-align: center;
 }
 
 .link {
