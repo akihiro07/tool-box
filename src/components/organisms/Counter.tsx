@@ -27,7 +27,9 @@ export const OCounter = () => {
 
   return (
     <div>
-      <Link to="/">トップページへ戻る</Link>
+      <Link to="/" className={classes.link}>
+        トップページへ戻る
+      </Link>
 
       <h2 className={classes.title}>文字数カウント</h2>
 

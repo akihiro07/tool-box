@@ -1,5 +1,10 @@
 @import './colors';
 
+.link {
+  text-decoration: none;
+  color: $sub2;
+}
+
 .title {
   text-align: center;
   color: $sub2;
